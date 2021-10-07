@@ -1,0 +1,255 @@
+*{
+    margin:0px 0px;
+}
+.navbarsection{
+    background-color: #dd9f69;
+    width:100%;
+    height: 100%;
+}
+.navbar{
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+    margin-top: 0px;
+    align-items: center;
+}
+.navbar::before{
+    content:"";
+    width:100%;
+    height:100%;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    justify-content: left;
+}
+.navbar img{
+    margin:20px 40px;
+    border-radius: 50%;
+    height:90px;
+    width:90px;
+    border:solid black 6px;
+}
+.navbar ul li{
+    margin:25px 15px;
+    height:15%;
+    border:solid black 6px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 10px;
+}
+.navbar ul a{
+    padding: 10px 10px;
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+}
+.navbar ul li:hover{
+    background-color: black;
+}
+/* Main Home Page CSS */
+.box{
+    border: solid black 4px;
+    position: relative;
+}
+.box::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background: url('./images/BG4.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity:0.8;
+}
+.box h2{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 60px;
+    color: white;
+}
+.box p{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.btn{
+    margin-top: 40px;
+    margin-bottom:150px;
+    cursor: pointer;
+    border: solid white 4px;
+    padding:15px 15px;
+    text-align: center;
+    color: white;
+    height:68px;
+    width:200px;
+    background-color:#a20606;
+    border-radius: 25px;
+}
+
+
+/* food menu */
+
+.foodheader{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: red;
+}
+.foodbox{
+    border: solid black 4px;
+    border-radius:25px;
+    margin:50px 10px;
+    padding:20px 20px;
+    display: flex;
+    flex-wrap:wrap;
+    height:auto;
+    justify-content: space-around;
+    background-color: red;
+}
+.fooditem{
+    color:white;
+    background-color: black;
+    width:375px;
+    border: solid black 6px;
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+    padding:20px 20px;
+    align-items: center;
+    margin:50px 10px;
+    border-radius: 45px;
+}
+.fooditem:hover{
+    background-color: white;
+    color:black;
+}
+.fooditem h2{
+    margin-top:20px;
+    text-align: center;
+    text-decoration: wavy;
+    color:red;
+    text-decoration: underline 5px 2px;
+}
+.fooditem p{
+    font-family: cursive;
+    margin:20px 20px;
+}
+.fooditem img{
+    border-radius: 50%;
+    margin-top: 25px;
+    height:200px;
+    width:200px;
+}
+.order{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn1{
+    margin-top: 40px;
+    margin-bottom:100px;
+    cursor: pointer;
+    border: solid white 4px;
+    padding:15px 15px;
+    text-align: center;
+    color: white;
+    height:100px;
+    width:200px;
+    font-family: cursive;
+    background-color:black;
+    border-radius: 25px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+/* Services Section */
+.services{ 
+    margin-top:-25px;
+}
+
+.services h2{
+    margin-top:20px;
+    text-align: center;
+    text-decoration: wavy;
+    color:red;
+    text-decoration: underline 5px 2px;
+}
+.services >h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.count{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 8px;
+    margin:50px 10px;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 45px;
+    background: url('./images/BG3.jpg') no-repeat center center/cover;
+}
+.service-item{
+    color:white;
+    background-color: black;
+    width:320px;
+    border: solid black 6px;
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+    padding:20px 20px;
+    align-items: center;
+    margin:50px 10px;
+    border-radius: 45px;
+}
+.service-item:hover{
+    background-color: white;
+    color:black;
+}
+.services img{
+    height:200px;
+    width:200px;
+}
+
+.gratitude{
+    position: absolute;
+    margin-top: 0%;
+    background: url(./images/BG4.jpg) no-repeat center center/cover;
+    height:75%;
+    margin-left:10px;
+    margin-right:10px;
+    border-radius: 50px;
+    width:97.5%;
+    border: black solid 9px;
+    opacity: 80%;
+    padding-bottom: 100px;
+}
+.note{
+    flex-wrap: wrap;
+    position: relative;
+    font-family: cursive;
+    margin-top: 65px;
+    z-index: 50;
+    opacity:100%;
+    padding:25px;
+    text-align: center;
+    font-size: 50px;
+    justify-content: center;
+    color: white;
+}
+.note1{
+    padding:25px;
+    font-weight: bolder;
+}
+.note2{
+    padding:40px;
+    font-size: 35px;
+}
+

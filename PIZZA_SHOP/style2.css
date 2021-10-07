@@ -1,0 +1,63 @@
+/* CSS RESET */
+*{
+    margin : 0px;
+    padding: 0px;
+}
+
+/* NAV BAR CSS */
+.navbar{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    width:20%;
+}
+.logo img{
+    display: block;
+    height:80px;
+    width:80px;
+    margin:15px 15px;
+    border: solid black 4px;
+    border-radius: 50%;
+}
+.navbar ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:normal;
+}
+
+.navbar ul li{
+    height:auto;
+    width:auto;
+    display: flex;
+    font-style:none ;
+    text-decoration: none;
+    padding: 2rem 4rem;
+}
+.navbar ul li a{
+    border:black solid 2px;
+    border-radius:5px;
+    padding: 5px 5px;
+    height:2rem;
+}
+.item a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+.item a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+}
+.navbar::before{
+    content: "";
+    background-color: #333333;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    position: absolute; 
+}
+
