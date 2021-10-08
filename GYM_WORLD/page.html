@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link rel="stylesheet" href="page.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+
+        body {
+            margin: 0px;
+            color: #ffffff;
+            font-size: 35px;
+            height: 1950px;
+            background-repeat: no-repeat;
+            font-family: cursive;
+            /* background-color: rgb(0, 0, 0);
+            background-image: url('images/shape.jpg'); */
+            background: #070e1a url('images/shape.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .heading {
+            z-index: 11;
+        }
+
+        .navbar {
+            z-index: 11;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            display: inline-block;
+            margin: auto;
+            background-color: #ca0813;
+            height: 50px;
+            width: 1390px;
+            border: solid white 6px;
+            border-bottom-right-radius: 50px;
+            padding-bottom: 7px;
+        }
+
+        .element {
+            display: inline-block;
+            height: 25px;
+            font-size: 25px;
+            width: 145px;
+            text-align: center;
+            border: solid 2px #ca0813;
+            border-radius: 20px;
+            font-weight: 900;
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 25px;
+            margin-right: 0px;
+        }
+
+        .element:hover {
+            height: 35px;
+            background-color: #d9ff00;
+            border: solid 2px black;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .icon {
+            z-index: 12;
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin-top: 0px;
+            margin-left: 0px;
+            border: solid white 6px;
+            height: 105px;
+            width: 120px;
+            background-color: #ff0011;
+            border-bottom-left-radius: 41%;
+            padding: 10px;
+        }
+
+        .icon:hover {
+
+            background-color: #d9ff00;
+        }
+
+        .shapeimg {
+            display: inline-block;
+
+            position: absolute;
+            top: 100px;
+            right: 0px;
+        }
+
+        .shapecontent {
+            text-align: center;
+            font-weight: 500%;
+            position: absolute;
+            color: rgb(255, 157, 0);
+            top: 800px;
+            left: 55px;
+            height: 2px;
+            width: 500px;
+            font-size: 80px;
+            font-family: 'Dancing Script', cursive;
+            z-index: 2;
+            
+        }
+
+        .imageshape {
+            position: absolute;
+            top: 100px;
+            right: 40px;
+            height: 900px;
+            width: 800px;
+        }
+
+        .joinform {
+            position: absolute;
+            top: 25px;
+            left: -550px;
+            font-size: 15px;
+            border: solid 6px #ffffff;
+            border-radius: 35px;
+            margin: 8px;
+            padding: 8px;
+            height: 550px;
+            width: 285px;
+        }
+
+        .formelement {
+            display: block;
+            border: solid black 4px;
+            background-color: #ffcfec;
+            border-radius: 15px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px 10px 10px 10px;
+            width: 225px;
+            text-align: center;
+        }
+
+        .formelement:hover {
+            background-color: #d482b4;
+            color: black;
+            border: solid black 4px;
+        }
+
+        #Gender {
+            margin-top: 10px;
+            color: red;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        #Reset {
+            float: left;
+            background-color: #00ff2a;
+            text-align: center;
+            font-family: cursive;
+            font-size: 14px;
+            margin: 5px 5px 5px 5px;
+            border: soli black 4px;
+            border-radius: 15px;
+            padding: 10px 10px 10px 10px;
+            width: 80px;
+        }
+
+        .btn {
+            display: inline;
+            text-align: center;
+            font-family: cursive;
+            font-size: 14px;
+            margin: 5px 3px 5px 5px;
+            border: solid black 4px;
+            border-radius: 15px;
+            padding: 10px 10px 10px 10px;
+            width: 85px;
+        }
+
+        #Reset:hover {
+            background-color: #048619;
+            color: black;
+            border: solid black 4px;
+        }
+
+        .Submit {
+            background-color: red;
+        }
+
+        .Submit:hover {
+            background-color: rgb(184, 3, 3);
+        }
+
+        .CallUs {
+            background-color: rgb(255, 251, 0);
+        }
+
+        .CallUs:hover {
+            background-color: rgb(179, 176, 3);
+        }
+
+        .Tip1 {
+            position: absolute;
+            display: block;
+            top: 950px;
+            left: -675px;
+            height: 375px;
+            width: 700px;
+            margin-top: 90px;
+            padding: 35px 45px 45px 45px;
+            background-color: white;
+            border: rgb(255, 157, 0) solid 14px;
+            border-top-left-radius: 20%;
+            border-top-right-radius: 40.75%;
+            border-bottom-left-radius: 40.75%;
+            border-bottom-right-radius: 20%;
+            color: white;
+            text-align: center;
+            font-style: oblique;
+        }
+
+        .tip1in {
+            border: solid 8px rgb(255, 157, 0) ;
+            height:335px;
+            background-color: #070e1a;
+            padding: 25px 10px 10px 10px;
+            border-top-left-radius: 40%;
+            border-top-right-radius: 20%;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 40%;
+        }
+        .tip1in:hover{
+            color:yellow;
+            
+            border: solid 10px rgb(255, 157, 0);
+        }
+
+        .tip {
+            margin-top: 35px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .foodpyramidimg{
+            
+            height:500px;
+            width:500px;
+            position: absolute;
+            display: block;
+            top: 1125px;
+            left: 900px;
+            border: solid 10px rgb(255, 157, 0);
+            border-radius: 10%;
+        }
+        .footer{
+            position: absolute;
+            display: block;
+            top: 1750px;
+            left: 520px;
+            border:solid 10px rgb(255, 157, 0);
+            font-size:60px;
+            height:100px;
+            width:500px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer a{
+            text-decoration: none;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="heading">
+        <img class="icon" src="images/icon.png" alt="unable to upload">
+        <div class="box" id="mid">
+            <div class="navbar">
+                <div class="element" id="nav2"> Home</div>
+                <div class="element" id="nav2"> Join Gym</div>
+                <div class="element" id="nav3">About</div>
+                <div class="element" id="nav4">Trainers</div>
+                <div class="element" id="nav5">Contact</div>
+                <div class="element" id="nav6">Feedback</div>
+                <div class="element" id="nav7">Follow</div>
+            </div>
+        </div>
+    </header>
+    <div class="shapecontent">Here We Shape Your Body</div>
+    <div class="imageshape">
+
+        <div class="joinform">
+            <h2>Join Gym</h2>
+            <hr>
+            <form class="joinformelement">
+                Name : <input class="formelement" type="text" name="MyName" id="MyName">
+                Weight : <input class="formelement" type="number" name="Weight" id="Weight">
+                Height : <input class="formelement" type="number" name="Height" id="Height">
+                Date Of Birth : <input class="formelement" type="date" name="BOB" id="DOB">
+                E-Mail : <input class="formelement" type="email" name="email" id="email">
+                Gender -> Male : <input type="radio" name="Gender" id="Gender"> Female : <input type="radio"
+                    name="Gender" id="Gender">
+                <hr>
+                <button class="btn CallUs">Call Us</button>
+                <button class="btn Submit">Submit</button>
+                <input type="reset" value="Reset" id="Reset" class="btn">
+            </form>
+        </div>
+        <div class="Tip1">
+            <div class="tip1in">
+                <div class="tip">
+                    THE ONLY WAY TO KEEP YOUR HEALTH GOOD
+                    <br>IS TO EAT WHAT YOU DON'T WANT,
+                    <br>DRINK WHAT YOU DON'T LIKE,
+                    <br>AND DO WHAT YOU'D RATHER NOT
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="foodpyramid">
+            <img src="images/foodpyramid.jpg" alt="unable to upload" class="foodpyramidimg">
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://www.codechef.com/users/vedanshtandon"> Follow Us </a>
+    </div>
+</body>
+
+</html>
