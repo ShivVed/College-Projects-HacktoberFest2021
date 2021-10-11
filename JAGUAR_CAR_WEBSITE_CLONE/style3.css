@@ -19,24 +19,23 @@
 .container{
     margin-top: 45px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     height:auto;
     width:100%;
+    overflow: auto;
 }
 .cars{
-    border: solid black 4px;
     background-color: transparent;
-   margin-top: 35px;
+    margin: 35px;
     height: auto;
-    width:23%;
+    min-width: 380px;
     background-color: rgb(229 229 229);
+    
 }
 .carimg{
-    display: block;
+    display: none;
     width:100%;
     height:240px;
-    border-bottom: black solid 4px;
+    
 }
 .cars h2{
     font-family: "JLR Proxima Nova","Arial Unicode","arial","helvetica",sans-serif;
@@ -44,6 +43,9 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-image: url(images/display.jpg);
+    background-size: contain;
+    height: 220px;
 }
 .cars p{
     font-family: "JLR Proxima Nova","Arial Unicode","arial","helvetica",sans-serif;
@@ -54,7 +56,7 @@
     display: block;
     width:100%;
     height:240px;
-    border-top: black solid 4px;
+    
 }
 @media screen and (max-width:600px)
 {
@@ -63,10 +65,8 @@
     }
     .container{
         height:auto;
-    width:80%;
     }
     .cars{
-        border: solid black 4px;
         background-color: rgb(229 229 229);
        margin-top: 60px;
         height: auto;
@@ -75,8 +75,7 @@
         font-size: 7px;
     }
    .carimg{
-       border-bottom: black solid 4px;
-    display: block;
+       display: none;
     width: 100%;
     height:250px;
    } 
