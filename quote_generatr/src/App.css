@@ -6,10 +6,9 @@ body{
 #quotes-box{
   background-color: white;
   width: 40%;
-  margin-left: 300px;
+  transform: translate(50%, 40%);
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
   padding: 50px 50px;
   border-radius: 1.5em;
 }
