@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ff00ea;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 7px;
+}
